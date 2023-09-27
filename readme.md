@@ -8,16 +8,23 @@ Jogo desenvolvido para atividade da matéria optativa de Resolução de problema
 
 ## Começando
 
-clonar o projeto.
+clonar o projeto
+
+```bash
+https://github.com/Alexddsilva/jogoForca.git
+```
 
 ## Executar
 
-Abra a pasta do projeto
+Abra a pasta do projeto e digite os comandos
 
-````npm install
-``` node src/index.js
+```
+node src/index.js --palavra Alguma palavra --tentativas 15
+```
 
 ### Pré-requisitos
+
+```
 node.js
 git
-````
+```
