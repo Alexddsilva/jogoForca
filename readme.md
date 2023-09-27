@@ -11,7 +11,7 @@ Jogo desenvolvido para atividade da matéria optativa de Resolução de problema
 clonar o projeto
 
 ```bash
-https://github.com/Alexddsilva/jogoForca.git
+git clone https://github.com/Alexddsilva/jogoForca.git
 ```
 
 ## Executar
