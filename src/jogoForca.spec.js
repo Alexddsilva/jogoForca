@@ -25,12 +25,28 @@ test("verifica se o jogo é vencido", () => {
   jogo.tentarPalpite("t");
   expect(jogo.jogoVencido).toBe(true);
 });
+
 test("verifica se o jogo é perdido após um número máximo de tentativas", () => {
   const jogo = new JogoForca("javascript", 3);
   jogo.tentarPalpite("x");
   jogo.tentarPalpite("y");
   jogo.tentarPalpite("z");
+  console.log(jogo.tentativasRestantes);
   expect(jogo.jogoPerdido).toBe(true);
+});
+
+test("verifica se o jogo continua quando ainda há tentativas", () => {
+  const jogo = new JogoForca("javascript", 3);
+  jogo.tentarPalpite("x");
+  jogo.tentarPalpite("y");
+  expect(jogo.jogoPerdido).toBe(false);
+});
+
+test("verifica se o jogo ignora números", () => {
+  const jogo = new JogoForca("javascript", 3);
+  jogo.tentarPalpite("1");
+  jogo.tentarPalpite("2");
+  expect(jogo.tentativasRestantes).toBe(3);
 });
 
 test("aceita letras maiúsculas como palpite", () => {

@@ -7,6 +7,7 @@ class JogoForca {
   }
 
   tentarPalpite(letra) {
+    if (letra.length !== 1 || !/^[a-zA-Z]+$/.test(letra)) return;
     letra = letra.toLowerCase();
 
     if (!this.palavraSecreta.includes(letra)) {
