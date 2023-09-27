@@ -16,10 +16,24 @@ git clone https://github.com/Alexddsilva/jogoForca.git
 
 ## Executar
 
-Abra a pasta do projeto e digite os comandos
+Digite os comandos
+
+```
+cd jogoForca
+```
+
+```
+npm install
+```
 
 ```
 node src/index.js --palavra Alguma palavra --tentativas 15
+```
+
+## Testes
+
+```
+npx jest
 ```
 
 ### Pré-requisitos
